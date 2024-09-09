@@ -1,0 +1,119 @@
+body {
+    background-image: url('m.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+.input-group input:focus {
+    border-bottom: 1px solid #007bff;
+}
+
+.input-group i {
+    color: #ccc;
+    margin-left: 10px;
+}
+
+.animatd-input:focus::placeholder {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #06386a;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+.options .separator {
+    margin: 0 5px;
+    color: #0c0c0c;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #fff8f8;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background: #747874;
+    color: rgb(247, 237, 237);
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+}
