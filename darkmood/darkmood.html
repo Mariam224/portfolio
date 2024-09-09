@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضع ليلي ووضع فاتح</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin-top: 20%;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .toggle-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .light-mode {
+            background-color: beige;
+        }
+
+        .dark-mode {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="toggle-button light-mode" onclick="setLightMode()">Light</button>
+    <button class="toggle-button dark-mode" onclick="setDarkMode()">Dark</button>
+
+    <script>
+        function setLightMode() {
+            document.body.style.backgroundColor = 'white';
+            document.body.style.color = 'black';
+        }
+
+        function setDarkMode() {
+            document.body.style.backgroundColor = 'black';
+            document.body.style.color = 'white';
+        }
+    </script>
+</body>
+
+</html>
